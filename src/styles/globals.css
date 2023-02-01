@@ -25,3 +25,14 @@
   font-display: optional;
   src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
 }
+
+.layout-container {
+  max-width: 85.5rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 92rem) {
+  .layout-container {
+    @apply px-5;
+  }
+}

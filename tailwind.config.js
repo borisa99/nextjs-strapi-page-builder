@@ -12,7 +12,7 @@ module.exports = {
       xxs: ['0.75rem', { lineHeight: '1em' }], // 12px
       xs: ['0.8125rem', { lineHeight: '1.25em' }], // 13px
       sm: ['0.875rem', { lineHeight: '1.5em' }], // 14px
-      md: ['0.9375rem', { lineHeight: '1.6em' }], // 15px
+      md: ['0.9375rem', { lineHeight: '1.5em' }], // 15px
       lg: ['1rem', { lineHeight: '1.5em' }], // 16px
       xl: ['1.125rem', { lineHeight: '1.3em' }], // 18px
       '2xl': ['1.25rem', { lineHeight: '1.3em' }], // 20px

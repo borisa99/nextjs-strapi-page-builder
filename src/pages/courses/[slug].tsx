@@ -19,7 +19,7 @@ function CoursePage({
   course,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="flex min-h-screen flex-col gap-y-28 bg-gray-800 px-3">
+    <div className="flex flex-col gap-y-28">
       <CourseHero />
       <Benefits />
       <CourseDescription />

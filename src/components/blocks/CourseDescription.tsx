@@ -40,7 +40,7 @@ export default function CourseDescription() {
           className="bg-gray-800 text-turquoise-500"
           onClick={() => setShowMore((prev) => !prev)}
         >
-          {showMore ? 'Hide' : 'Show More'}
+          Show {showMore ? 'Less' : 'More'}
         </button>
       </div>
       <div className="flex items-center justify-between">
