@@ -11,6 +11,7 @@ import Benefits from '@/components/blocks/Benefits'
 import CourseDescription from '@/components/blocks/CourseDescription'
 import { getLocalizedParams } from '@/utils/localize'
 import { Course } from '@/types/course'
+import SupportImagery from '@/components/blocks/SupportImagery'
 
 function CoursePage({
   course,
@@ -20,6 +21,7 @@ function CoursePage({
       <CourseHero />
       <Benefits />
       <CourseDescription />
+      <SupportImagery />
       <BlockManager blocks={course.blocks} />
     </div>
   )
