@@ -6,6 +6,7 @@ import type {
 
 import axios from '@/data/axios'
 import BlockManager from '@/components/shared/BlockManager'
+import CourseHero from '@/components/blocks/CourseHero'
 import { getLocalizedParams } from '@/utils/localize'
 import { Course } from '@/types/course'
 
@@ -13,7 +14,8 @@ function CoursePage({
   course,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="bg-black">
+    <div className="min-h-screen bg-gray-800">
+      <CourseHero />
       <BlockManager blocks={course.blocks} />
     </div>
   )
