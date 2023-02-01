@@ -4,13 +4,13 @@ export default function Instructor() {
       <h1 className="mb-10 text-5xl font-semibold text-white">
         Your instructor
       </h1>
-      <div className="flex justify-center rounded bg-gray-700 p-10">
-        <div className="mr-14 h-20 w-20 overflow-hidden rounded bg-gray-200"></div>
-        <div className="flex flex-col">
+      <div className="flex rounded bg-gray-700 p-10">
+        <div className="mr-14 block h-20 w-20 shrink-0 rounded bg-white"></div>
+        <div>
           <h3 className="mb-4 resize-none text-3xl font-semibold text-gray-50">
             Sam Pattuzzi
           </h3>
-          <p className="text-md text-gray-200">
+          <p className="w-fit text-md text-gray-200">
             Sam wrote his first game at 14, hacking together little games in
             Macromedia Flash during his summer holidays. Not long after, he
             taught himself C++ followed by Python and web programming. He was
