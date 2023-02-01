@@ -1,7 +1,7 @@
 export interface ButtonProps {
-  title: string;
+  title: string
 }
 
 export default function Button({ title }: ButtonProps) {
-  return <button>{title}</button>;
+  return <button>{title}</button>
 }

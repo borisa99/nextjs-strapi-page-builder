@@ -1,10 +1,10 @@
-import Button, { ButtonProps } from "./Button";
+import Button, { ButtonProps } from './Button'
 
 export interface HeroProps {
-  title: string;
-  subtitle: string;
-  image: string;
-  button: ButtonProps;
+  title: string
+  subtitle: string
+  image: string
+  button: ButtonProps
 }
 
 export default function Hero({ title, subtitle, button }: HeroProps) {
@@ -14,5 +14,5 @@ export default function Hero({ title, subtitle, button }: HeroProps) {
       <h3>{subtitle}</h3>
       <Button {...button} />
     </div>
-  );
+  )
 }
