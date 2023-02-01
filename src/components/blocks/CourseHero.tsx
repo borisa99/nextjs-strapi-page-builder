@@ -28,25 +28,40 @@ const courseContentDetails: Array<{
 export default function CourseHero() {
   return (
     <div className="flex h-[38.375rem] gap-x-[3.25rem] ">
-      <div className="flex flex-1 flex-col bg-blue-100">
-        <div className="mb-4 flex-1 bg-yellow-100">Main image</div>
-        <div className="h-[7.5rem] bg-pink-100">Carousel</div>
+      <div className="flex flex-1 flex-col">
+        <div
+          className="mb-4 flex-1 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://dlcdnrog.asus.com/rog/media/160050017840.webp')`,
+          }}
+        ></div>
+        <div className="flex h-[7.5rem] gap-x-4">
+          {[1, 2, 3, 4].map((i) => (
+            <div
+              key={i}
+              className="flex-1 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url('https://dlcdnrog.asus.com/rog/media/160050017840.webp')`,
+              }}
+            ></div>
+          ))}
+        </div>
       </div>
       <div className="flex-1">
         <h1 className="mb-4 text-5xl font-semibold text-white">
           Unity Dialogue & Quests: Intermediate C# Game Coding
         </h1>
-        <h2 className="mb-8 text-lg text-gray-300">
+        <h4 className="mb-8 text-lg text-gray-300">
           Implement a Dialogue Editor and Quest System and integrate it into an
           RPG project.
-        </h2>
+        </h4>
         <div className="mb-5 grid grid-cols-2 rounded border-b border-l border-white-7">
           {courseContentDetails.map(({ icon, label }) => (
             <div
               key={label}
               className="flex items-center border-t border-r border-white-7 p-6 text-sm text-white"
             >
-              <span className="mr-3">{icon}</span>
+              <span className="mr-3 fill-turquoise-500">{icon}</span>
               <span className="mr-2 text-gray-300">{label}:</span>
               <span className="text-gray-200">{label}</span>
             </div>
@@ -62,9 +77,21 @@ export default function CourseHero() {
               <span className="text-xs text-gray-300">Save 45%</span>
             </div>
           </div>
-          <button className="w-full rounded-lg bg-turquoise-600 py-4 text-center font-semibold text-gray-700">
+          <button className="mb-7 w-full rounded-lg bg-turquoise-600 py-4 text-center font-semibold text-gray-700">
             Buy now
           </button>
+          <div className="flex items-center justify-center text-xxs">
+            <span className="mr-2 fill-red-500">
+              <IconTimer />
+            </span>
+            <span className="text-gray-50">
+              13 hours 12 minutes and 34 seconds
+            </span>
+            &nbsp;
+            <span className="text-gray-300">
+              remain in the sale for this course
+            </span>
+          </div>
         </div>
       </div>
     </div>
