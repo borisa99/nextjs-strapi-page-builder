@@ -9,9 +9,10 @@ import BlockManager from '@/components/shared/BlockManager'
 import CourseHero from '@/components/blocks/CourseHero'
 import Benefits from '@/components/blocks/Benefits'
 import CourseDescription from '@/components/blocks/CourseDescription'
+import SupportImagery from '@/components/blocks/SupportImagery'
+import Instructor from '@/components/blocks/Instructor'
 import { getLocalizedParams } from '@/utils/localize'
 import { Course } from '@/types/course'
-import SupportImagery from '@/components/blocks/SupportImagery'
 
 function CoursePage({
   course,
@@ -22,6 +23,7 @@ function CoursePage({
       <Benefits />
       <CourseDescription />
       <SupportImagery />
+      <Instructor />
       <BlockManager blocks={course.blocks} />
     </div>
   )
