@@ -1,3 +1,5 @@
+import IconLock from '@/components/icons/IconLock'
+import IconSmartDisplay from '@/components/icons/IconSmartDisplay'
 import Expandable, { ExpandableProps } from '@/components/shared/Expandable'
 
 interface CurriculumItemProps extends Omit<ExpandableProps, 'children'> {
@@ -19,10 +21,14 @@ export default function CurriculumItem({
           <div>
             {index + 1}. {item.title}
           </div>
-          <div className="flex">
+          <div className="flex items-center">
             <span className="mr-3">{item.duration}</span>
-            <span className="mr-5">i</span>
-            <span>i</span>
+            <span className="mr-5">
+              <IconSmartDisplay />
+            </span>
+            <span>
+              <IconLock />
+            </span>
           </div>
         </div>
       ))}
