@@ -8,6 +8,7 @@ import axios from '@/data/axios'
 import BlockManager from '@/components/shared/BlockManager'
 import CourseHero from '@/components/blocks/CourseHero'
 import Benefits from '@/components/blocks/Benefits'
+import CourseDescription from '@/components/blocks/CourseDescription'
 import { getLocalizedParams } from '@/utils/localize'
 import { Course } from '@/types/course'
 
@@ -15,9 +16,10 @@ function CoursePage({
   course,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div className="flex min-h-screen flex-col gap-y-28 bg-gray-800">
+    <div className="flex min-h-screen flex-col gap-y-28 bg-gray-800 px-3">
       <CourseHero />
       <Benefits />
+      <CourseDescription />
       <BlockManager blocks={course.blocks} />
     </div>
   )
