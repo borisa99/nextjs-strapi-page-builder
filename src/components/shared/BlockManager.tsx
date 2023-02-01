@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Block } from '@/types/course'
+
 import { BlockProps, blocks } from '../blocks'
 
 const getBlockComponent = ({ __component, id, ...rest }: Block) => {

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import IconCalendar from '../icons/IconCalendar'
 
 export default function CourseDescription() {

@@ -1,18 +1,18 @@
 import type {
-  GetStaticProps,
   GetStaticPaths,
+  GetStaticProps,
   InferGetStaticPropsType,
 } from 'next'
 
-import axios from '@/data/axios'
-import BlockManager from '@/components/shared/BlockManager'
-import CourseHero from '@/components/blocks/CourseHero'
 import Benefits from '@/components/blocks/Benefits'
 import CourseDescription from '@/components/blocks/CourseDescription'
-import SupportImagery from '@/components/blocks/SupportImagery'
+import CourseHero from '@/components/blocks/CourseHero'
 import Instructor from '@/components/blocks/Instructor'
-import { getLocalizedParams } from '@/utils/localize'
+import SupportImagery from '@/components/blocks/SupportImagery'
+import BlockManager from '@/components/shared/BlockManager'
+import axios from '@/data/axios'
 import { Course } from '@/types/course'
+import { getLocalizedParams } from '@/utils/localize'
 
 function CoursePage({
   course,

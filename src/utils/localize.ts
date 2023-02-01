@@ -1,5 +1,5 @@
-import { ParsedUrlQuery } from 'querystring'
 import delve from 'dlv'
+import { ParsedUrlQuery } from 'querystring'
 
 // This function simply return the slug and the locale of the request with default values
 export function getLocalizedParams(query?: ParsedUrlQuery) {
