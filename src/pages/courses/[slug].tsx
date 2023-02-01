@@ -13,7 +13,7 @@ function CoursePage({
   course,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <div>
+    <div className="bg-black">
       <BlockManager blocks={course.blocks} />
     </div>
   );
