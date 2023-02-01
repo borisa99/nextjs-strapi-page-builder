@@ -27,8 +27,8 @@ const courseContentDetails: Array<{
 
 export default function CourseHero() {
   return (
-    <div className="flex h-[38.375rem] gap-x-[3.25rem] ">
-      <div className="flex flex-1 flex-col">
+    <div className="flex h-[38.375rem]">
+      <div className="mr-14 flex w-[60%] flex-col">
         <div
           className="mb-4 flex-1 bg-cover bg-center bg-no-repeat"
           style={{
@@ -47,7 +47,7 @@ export default function CourseHero() {
           ))}
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex w-[40%] flex-col">
         <h1 className="mb-4 text-5xl font-semibold text-white">
           Unity Dialogue & Quests: Intermediate C# Game Coding
         </h1>
