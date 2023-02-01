@@ -30,7 +30,7 @@ export default function CourseHero() {
     <div className="flex h-[38.375rem]">
       <div className="mr-14 flex w-[60%] flex-col">
         <div
-          className="mb-4 flex-1 bg-cover bg-center bg-no-repeat"
+          className="mb-4 flex-1 bg-cover bg-center bg-no-repeat rounded"
           style={{
             backgroundImage: `url('https://dlcdnrog.asus.com/rog/media/160050017840.webp')`,
           }}
@@ -39,7 +39,7 @@ export default function CourseHero() {
           {[1, 2, 3, 4].map((i) => (
             <div
               key={i}
-              className="flex-1 bg-cover bg-center bg-no-repeat"
+              className="flex-1 bg-cover bg-center bg-no-repeat rounded"
               style={{
                 backgroundImage: `url('https://dlcdnrog.asus.com/rog/media/160050017840.webp')`,
               }}
