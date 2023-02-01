@@ -9,6 +9,7 @@ import CourseDescription from '@/components/blocks/CourseDescription'
 import CourseHero from '@/components/blocks/CourseHero'
 import Curriculum from '@/components/blocks/Curriculum'
 import Instructor from '@/components/blocks/Instructor'
+import RelatedCourses from '@/components/blocks/RelatedCourses'
 import SupportImagery from '@/components/blocks/SupportImagery'
 import BlockManager from '@/components/shared/BlockManager'
 import axios from '@/data/axios'
@@ -26,6 +27,7 @@ function CoursePage({
       <SupportImagery />
       <Instructor />
       <Curriculum />
+      <RelatedCourses />
       <BlockManager blocks={course.blocks} />
     </div>
   )
