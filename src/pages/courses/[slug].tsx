@@ -7,6 +7,7 @@ import type {
 import Benefits from '@/components/blocks/Benefits'
 import CourseDescription from '@/components/blocks/CourseDescription'
 import CourseHero from '@/components/blocks/CourseHero'
+import Curriculum from '@/components/blocks/Curriculum'
 import Instructor from '@/components/blocks/Instructor'
 import SupportImagery from '@/components/blocks/SupportImagery'
 import BlockManager from '@/components/shared/BlockManager'
@@ -24,6 +25,7 @@ function CoursePage({
       <CourseDescription />
       <SupportImagery />
       <Instructor />
+      <Curriculum />
       <BlockManager blocks={course.blocks} />
     </div>
   )
